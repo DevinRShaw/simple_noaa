@@ -4,7 +4,6 @@ Welcome to simple_NOAA, a Python package for accessing weather data from the Nat
 
 # Dependencies
 - import pandas
-- import io
 - import request
 - from shapely.geometry import Point, Polygon
 # Usage
