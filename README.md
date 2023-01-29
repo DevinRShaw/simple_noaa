@@ -26,10 +26,10 @@ This package is released under a open-source license. Please refer to the licens
 Creator: devinrshaw@gmail.com
 
 # References
-Metadata on NOAA stations: https://www.ncei.noaa.gov/access/homr/reports/mshr
-NOAA dataset API user documentation: https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation
-NOAA datasets explained: https://www.ncdc.noaa.gov/cdo-web/datasets
-Explanation of dataset labels: https://www.ncei.noaa.gov/pub/data/metadata/documents/
+- Metadata on NOAA stations: https://www.ncei.noaa.gov/access/homr/reports/mshr
+- NOAA dataset API user documentation: https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation
+- NOAA datasets explained: https://www.ncdc.noaa.gov/cdo-web/datasets
+- Explanation of dataset labels: https://www.ncei.noaa.gov/pub/data/metadata/documents/
 # FAQs
 - What is the package's main purpose?
 
