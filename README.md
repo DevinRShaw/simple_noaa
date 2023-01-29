@@ -1,48 +1,44 @@
 # simple_NOAA
 
-simple_NOAA object contains dataframe of station metadata 
-to be used for requesting data from the NOAA API based on location and time
+simple_NOAA
+Welcome to simple_NOAA, a Python package for accessing weather data from the National Oceanic and Atmospheric Administration (NOAA) through their API. The package includes a dataframe of station metadata, which can be used to request weather data based on location and time.
 
+# Dependencies
+pandas
+io
+request
+from shapely.geometry import Point, Polygon
+# Usage
+The package includes the following functionalities:
 
-# dependacies
-- pandas 
-- io
-- request
-- from shapely.geometry import Point, Polygon
+stations_frame: A dataframe of station data from NOAA
+stations_in_region(lat, lon, num_closest, radius): Returns a list of the num_closest stations within radius kilometers of the point created by lat and lon
+yearly_request(search_type, station_list, year1, year2): Returns a dataframe of global-summary-of-the-year datasets for the requested stations
+monthly_request(search_type, station_list, year1, year2): Returns a dataframe of global-summary-of-the-month datasets for the requested stations
+daily_request(search_type, station_list, year1, year2): Returns a dataframe of daily-summaries datasets for the requested stations
+Examples and testing of the package's functionality can be found in the testing.ipynb file.
 
+# Contribution
+If you're interested in contributing to the development of the library, please reach out to me at devinrshaw@gmail.com. We welcome bug reports and feature requests.
 
-# usage
-simple_noaa.stations_frame is a dataframe of station data from NOAA
+# License
+This package is released under a open-source license. Please refer to the license file for any restrictions on its use.
 
-simple_noaa.stations_in_region(self,lat,lon,num_closest,radius) 
-- lat and lon are floats for latitude and longitude
-- num_closest is int of how many stations we want
-- radius is float input of how many decimals away stations will be requested  convert this to kilometers  
-- returns a list of num_closest stations within radius of point created by lat and lon
+# Contact
+Creator: devinrshaw@gmail.com
 
-simple_noaa.api_request(search_type, station_list,year1,year2)
-- returns a dataframe of data for stations inputted
-
-# examples / tests
-- examples / testing of funcitonalities is included in testing.ipynb
-
-
-# contribution
-Contribution: Guidelines on how to contribute to the development of the library, including information on how to submit bug reports and feature requests.
-
-# license
-License: Information on the license under which the library is released, and any restrictions on its use.
-
-# contact
-creator: devinrshaw@gmail.com
-
-# references
-
-metadata on noaa stations https://www.ncei.noaa.gov/access/homr/reports/mshr
-
-noaa dataset api use specified https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation
-
-explanation of dataset lables https://www.ncei.noaa.gov/pub/data/metadata/documents/GSOYReadme.txt
-
+# References
+Metadata on NOAA stations: https://www.ncei.noaa.gov/access/homr/reports/mshr
+NOAA dataset API user documentation: https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation
+NOAA datasets explained: https://www.ncdc.noaa.gov/cdo-web/datasets
+Explanation of dataset labels: https://www.ncei.noaa.gov/pub/data/metadata/documents/
 # FAQs
-FAQs: Frequently asked questions and their answers, for the most common issues or concerns about the library.
+What is the package's main purpose?
+simple_NOAA is a Python package that provides an easy-to-use interface for accessing weather data from the National Oceanic and Atmospheric Administration (NOAA) through their API.
+What kind of weather data can I request?
+You can request global-summary-of-the-year, global-summary-of-the-month, and daily-summaries datasets for specific stations.
+How do I find the stations I want to request data for?
+You can use the stations_in_region function to find stations within a certain radius of a given latitude and longitude.
+Is there a limit on how much data I can request?
+The NOAA API has usage limits, please refer to their API documentation for more information.
+Please let me know if you have any other question.
