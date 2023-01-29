@@ -39,8 +39,12 @@ simple_NOAA is a Python package that provides an easy-to-use interface for acces
 - What kind of weather data can I request?
 
 You can request global-summary-of-the-year, global-summary-of-the-month, and daily-summaries datasets for specific stations.
+
 - How do I find the stations I want to request data for?
+- 
 You can use the stations_in_region function to find stations within a certain radius of a given latitude and longitude. Alternatively you can create you own functions using the dataframe staions_frame upon simple_NOAA creation.
+
 -Is there a limit on how much data I can request?
+
 The NOAA API has usage limits, please refer to their API documentation for more information.
 Please let me know if you have any other question.
