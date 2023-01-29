@@ -8,7 +8,7 @@ Welcome to simple_NOAA, a Python package for accessing weather data from the Nat
 - request
 - from shapely.geometry import Point, Polygon
 # Usage
-- The package includes the following functionalities:
+The package includes the following functionalities:
 
 - stations_frame: A dataframe of station data from NOAA, this enables stations_in_region
 - stations_in_region(lat, lon, num_closest, radius): Returns a list of the num_closest stations within radius kilometers of the point created by lat and lon, enables searching 
