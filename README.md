@@ -41,7 +41,7 @@ You can request global-summary-of-the-year, global-summary-of-the-month, and dai
 
 - How do I find the stations I want to request data for?
 
-You can use the stations_in_region function to find stations within a certain radius of a given latitude and longitude. Alternatively you can create you own functions using the dataframe staions_frame upon simple_NOAA creation.
+You can use the stations_in_region function to find stations within a certain radius of a given latitude and longitude. Alternatively you can create you own functions using the dataframe staions_frame upon simple_noaa object creation.
 
 - Is there a limit on how much data I can request?
 
