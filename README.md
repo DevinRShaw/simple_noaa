@@ -1,6 +1,6 @@
 # simple_noaa
 
-Welcome to simple_noaa, a Python package for easily accessing weather data from the National Oceanic and Atmospheric Administration (NOAA) through their API. The package includes a dataframe of station metadata, which can be used to request weather data based on location and time.
+Welcome to simple_noaa, a Python package for easily accessing weather data from the National Oceanic and Atmospheric Administration (NOAA) through their API. The package includes a dataframe of station metadata, which can be used to request weather data based on location and time. This project was inspired by issues faced during a project creating datasets on wildfires for a machine learning model. This library provides easier method of the process that was completed and reduced the runtime from days to seconds by changing the data structures used.
 
 # Dependencies
 - import pandas
